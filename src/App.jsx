@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, Link, Routes} from "react-router-dom";
+import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import { FaCalendarAlt, FaDoorOpen, FaUsers } from "react-icons/fa";
 import UserPicker from "./Component/Users/UserPicker.jsx";
 import BookingsPage from "./Component/Bookings/BookingsPage.jsx";
@@ -39,9 +39,9 @@ function App() {
             <UserPicker/>
           </header>
           <Routes>
-            <Routes path="/bookings" element={<BookingsPage/>}/>
-            <Routes path="/bookables" element={<BookablesPage/>}/>
-            <Routes path="/users" element={<UsersPage/>}/>
+            <Route path="/bookings" element={<BookingsPage/>}/>
+            <Route path="/bookables" element={<BookablesPage/>}/>
+            <Route path="/users" element={<UsersPage/>}/>
           </Routes>
         </div>
       </BrowserRouter>
