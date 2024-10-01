@@ -1,7 +1,13 @@
 import './App.css';
-import { BrowserRouter, Link } from "react-router-dom";
+import {BrowserRouter, Link, Routes} from "react-router-dom";
 import { FaCalendarAlt, FaDoorOpen, FaUsers } from "react-icons/fa";
 import UserPicker from "./Component/Users/UserPicker.jsx";
+import BookingsPage from "./Component/Bookings/BookingsPage.jsx";
+import UsersPage from "./Component/Users/UsersPage.jsx";
+
+function BookablesPage() {
+  return null;
+}
 
 function App() {
   return (
@@ -32,8 +38,14 @@ function App() {
             </nav>
             <UserPicker/>
           </header>
+          <Routes>
+            <Routes path="/bookings" element={<BookingsPage/>}/>
+            <Routes path="/bookables" element={<BookablesPage/>}/>
+            <Routes path="/users" element={<UsersPage/>}/>
+          </Routes>
         </div>
       </BrowserRouter>
+      /* 사용자 선택한 메뉴 항목에 따라 화면에 보이는 UI 를 결정한다. */
   );
 }
 
