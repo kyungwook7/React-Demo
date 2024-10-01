@@ -1,5 +1,6 @@
 /* 함수 컴포넌트 예제 */
 export function Car(props) {
+    // eslint-disable-next-line react/prop-types
     return <li>I am a {props.brand}</li>
 }
 
