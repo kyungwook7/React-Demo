@@ -1,4 +1,4 @@
-// == 자바스크립트에서도 다음과 같이  ==
+// == 자바스크립트에서도 다음과 같이 클래스를 정의합니다. ==
 class Car {
     constructor(name) {
       this.brand = name;
@@ -26,4 +26,4 @@ class Model extends Car {
   const mycar2 = new Model("Ford", "Mustang");
 
   console.log(mycar2)
-  console.log(  mycar2.show())
+  console.log(mycar2.show())

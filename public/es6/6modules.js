@@ -11,6 +11,6 @@ import { name, age } from "./person.js";
 console.log(name)
 console.log(age)
 
-// default 키워드 내보내기
+//default 키워드 내보내기
 import message from "./person.js";
 console.log(message())

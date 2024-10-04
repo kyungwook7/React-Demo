@@ -16,7 +16,7 @@ function Garage() {
             </ul>
         </>
     )
-    /* main 메서드 cars 배열의 요소값을 Car 컴포넌트에 전달
+    /* main 메서드 cars 배열의 요소값을 Car 컴포넌트 프롭스에 전달
        여러개의 Car 컴포넌트 리턴
     */
 }

@@ -1,9 +1,9 @@
-import BookList from "./BookList.jsx";
+import BookableList from "./BookableList.jsx";
 
 function BookablePage() {
     return (
         <main className="bookables-page">
-            <BookList/>
+            <BookableList/>
         </main>
     )
 }

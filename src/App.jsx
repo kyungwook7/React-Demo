@@ -1,15 +1,13 @@
-import './App.css';
+import './App.css'
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
-import { FaCalendarAlt, FaDoorOpen, FaUsers } from "react-icons/fa";
-import UserPicker from "./Component/Users/UserPicker.jsx";
-import BookingsPage from "./Component/Bookings/BookingsPage.jsx";
-import UsersPage from "./Component/Users/UsersPage.jsx";
-
-function BookablesPage() {
-  return null;
-}
+import {FaCalendarAlt, FaDoorOpen, FaUsers} from "react-icons/fa";
+import UserPicker from "./component/Users/UserPicker.jsx";
+import BookingsPage from "./component/Bookings/BookingsPage.jsx";
+import BookablePage from "./component/Bookables/BookablePage.jsx";
+import UsersPage from "./component/Users/UsersPage.jsx";
 
 function App() {
+
   return (
       <BrowserRouter>
         <div className="App">
@@ -19,7 +17,7 @@ function App() {
                 <li>
                   <Link to="/bookings" className="btn btn-header">
                     <FaCalendarAlt/>
-                    <span>예약하기</span>
+                    <span>예약</span>
                   </Link>
                 </li>
                 <li>
@@ -38,15 +36,18 @@ function App() {
             </nav>
             <UserPicker/>
           </header>
+
           <Routes>
             <Route path="/bookings" element={<BookingsPage/>}/>
-            <Route path="/bookables" element={<BookablesPage/>}/>
+            <Route path="/bookables" element={<BookablePage/>}/>
             <Route path="/users" element={<UsersPage/>}/>
           </Routes>
+
         </div>
       </BrowserRouter>
-      /* 사용자 선택한 메뉴 항목에 따라 화면에 보이는 UI 를 결정한다. */
-  );
+      /* 사용자 선택한 메뉴 항목에 따라 화면에 보이는 UI 를 결정합니다.*/
+
+  )
 }
 
-export default App;
+export default App
