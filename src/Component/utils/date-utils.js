@@ -25,11 +25,11 @@ export function formatDate(date) {
 
 export function formatDateDay(date){
     const days = ['(일)', '(월)', '(화)', '(수)', '(목)', '(금)', '(토)'];
-    const dayName = days[date.getDay()]; // 요일 가져오기
+    const dayName = days[date.getDay()]; // 요일 0,1,2,3을 문자열 요일 이름으로 바꾸기
 
-    return formatDate(date) + "\n" + dayName
+    return formatDate(date) + "" + dayName
 }
-
+// 객체에 날짜를 key 로 할때 yyyy-mm-dd (표준시)
 export function shortISO (date) {
     return date.toISOString().split("T")[0];
 }
